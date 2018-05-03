@@ -1,0 +1,11 @@
+<div *ngIf="hero">
+  <h2>英雄 {{ hero.name }} 详细资料</h2>
+  <div><span>id: </span>{{ hero.id }}</div>
+  <div><span>name: </span>{{ hero.name | uppercase }}</div>
+  <div>
+    <label>name:
+      <input type="text" placeholder="name" [(ngModel)]="hero.name">
+    </label>
+  </div>
+  <button class="btn btn-success" (click)="goBack()">返回上一页</button>
+</div>
